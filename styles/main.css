@@ -26,6 +26,9 @@
     white-space: nowrap;
     
     transition: .3s ease;
+    background-color: #AAA;
+
+    z-index: 1;
 }
 
 
@@ -36,22 +39,24 @@
 
 .main-menu .menu-item{
     padding: 10px;
+    background-color: #AAA;
 
 }
 .main-menu .menu-item:hover{
-    background-color: #d6d6d6;
+    background-color: #fff;
     cursor: pointer;
 }
 
 .main-menu .menu-item .fa{
-    color: gray;
+    color: #AAA;
     width:40px;
     font-size: 25px;
     padding: 10px;
+    vertical-align: middle;
 }
 
 .main-menu .menu-item:hover > .fa{
-    color: #fff;;
+    color: #fff;
 }
 
 
