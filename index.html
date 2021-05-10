@@ -2,37 +2,98 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>mxyz</title>
+        <title>mxyz's portfolio</title>
+
+        <!--Styles--> 
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--Scripts-->
+        <script type="text/javascript" src="js/main.js"></script>
     </head>
-    <body>
-        mxyz
-        <header>
-            <h1>mxyz's blog</h1>
-            <img src="imgs/picpic.jpg" alt="Foto pessoal" width="100" height="100">
-        </header>
-        <section>
-            <header>
-                <h2>Posts</h2>
-            </header>
-            <article>
-                <header>
-                    <h3>What is Lorem Ipsum?</h3>
-                </header>
-                <p>
-                    Lorem Ipsum is simply dummy text of the <a href="https://www.linkedin.com/in/rafael-pieslak/" target="_blank">printing and typesetting</a> industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown <a href="mailto:rafael.pieslak@gmail.com">printer</a> took a galley of type and scrambled it to make a type 
-                    specimen book. It has survived not only five centuries, but also the leap 
-                    into electronic typesetting, remaining essentially unchanged. 
-                    It was popularised in the 1960s with the release of Letraset sheets containing 
-                    Lorem Ipsum passages, and more recently with desktop publishing software 
-                    like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-                <img src="imgs/picarticle1.jpg" alt="Edit de Texto em Html" width="960" height="322">
-            </article>            
+<body>
+    <header>
+        <div class=container-header>
+            <h3 class="title-header">mxyz's Portfolio</h3>
+            <div class="list-contacts">
+                <h3 class="title-header">Contact:</h3>
+                <a class="icon-contact" id="icon-tg"  href="https://t.me/mxyzplk" target="_blank">
+                    <i class="fa fa-telegram fa-1x"></i>
+                </a>
+                <a class="icon-contact" id="icon-em" href="mailto:rafael.pieslak@gmail.com" target="_blank" >
+                    <i class="fa fa-envelope fa-1x"></i>
+                </a>
+                <a class="icon-contact" id="icon-wpp" href="https://api.whatsapp.com/send/?phone=+5511987291382">
+                    <i class="fa fa-whatsapp fa-1x"></i>
+                </a>
+            </div>          
+        </div>
+    </header>
+    <main>
+        <div class="main-menu">
+            <ul>
+                <li class="menu-item" value="home" onclick="selSection(this,value);return false;"><i class="fa fa-home"></i>Home</li>
+                <li class="menu-item" value="blog" onclick="selSection(this,value);return false;"><i class="fa fa-sticky-note-o"></i>Blog</li>
+                <li class="menu-item" value="python" onclick="selSection(this,value);return false;"><i class="fa fa-code"></i>Python</li>
+                <li class="menu-item" value="frontend" onclick="selSection(this,value);return false;"><i class="fa fa-code"></i>Front-end</li>
+                <li class="menu-item" value="fortran" onclick="selSection(this,value);return false;"><i class="fa fa-code"></i>Fortran</li>
+                <li class="menu-item" value="about" onclick="selSection(this,value);return false;"><i class="fa fa-address-card-o"></i>About Me</li>
+            </ul>
+        </div>
+        <section class="menu-section" id="home">
+            <h3 class="title-section">Home: WIP</h3>
         </section>
-        <footer>
-            <a>Contatos:</a>
-        </footer>
-    </body>
+        <section class="menu-section" id="blog">
+            <h3 class="title-section">Blog: WIP</h3>
+        </section> 
+        <section class="menu-section" id="python">
+            <h3 class="title-section">Python: WIP</h3>
+        </section> 
+        <section class="menu-section" id="frontend">
+            <h3 class="title-section">Javascript: WIP</h3>
+        </section> 
+        <section class="menu-section" id="fortran">
+            <h3 class="title-section">Fortran: WIP</h3>
+        </section> 
+        <section class="menu-section" id="about">
+            <header class="header-about">
+                <div class="img-container">
+                    <img class="img-personal" src="imgs/aboutme.png"></img>
+                </div>    
+                <div class="description-personal">
+                    <h3>Rafael Pieslak a.k.a. mxyz</h3>
+                    <h4>Back-end Developer and Aerospace Engineer</h4>
+                </div>
+            </header>
+
+            <div class="tabs-xp">
+                <div id="tab-xp-eng"> <a href="#tab-xp-eng">Aerospace</a>
+                 <div>
+                    <div>
+                        Engineer with 11 years of experience in the aerospace industry, working in the design of Part 23 and 25 aircraft in the Loads and Aeroelasticity area.
+                    </div>
+                    <div>
+                        Experience working in the following activities:
+                     </div>
+                     <ul>
+                        <li class="list-xp">- Loads Computation on several components</li>
+                        <li class="list-xp">- Fatigue mean flight profile and components analysis</li>
+                        <li class="list-xp">- Flight/Tunnel test data analysis</li>
+                        <li class="list-xp">- Development of aerodynamic models</li>
+                        <li class="list-xp">- Flight-mechanics simulations for loads analysis</li>
+                    </ul>                                        
+                </div>
+                </div>
+           
+                <div id="tab-xp-dev"> <a href="#tab-xp-dev">Developer</a>
+                    <div>
+                                                           
+                    </div>
+                </div>
+            </div>
+            
+        </section>         
+    </main>
+</body>
+
 </html>

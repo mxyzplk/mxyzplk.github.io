@@ -1,0 +1,237 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #555;
+    color:#AAA;  
+}
+
+
+/* Main Menu */
+
+.main-menu{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 20px #d4d4d4;
+
+    width: 70px;
+    height: 100vh;
+
+    position: fixed;
+    top:0;
+    left:0;
+    
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    
+    transition: .3s ease;
+}
+
+
+.main-menu:hover{
+    width : 250px;
+    overflow-y: scroll;
+}
+
+.main-menu .menu-item{
+    padding: 10px;
+
+}
+.main-menu .menu-item:hover{
+    background-color: #d6d6d6;
+    cursor: pointer;
+}
+
+.main-menu .menu-item .fa{
+    color: gray;
+    width:40px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.main-menu .menu-item:hover > .fa{
+    color: #fff;;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #bbbbbb;
+    border-radius: 10px;
+  }
+
+
+/***********************/
+
+
+
+/** Main Header **/
+.container-header {
+    padding-left: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: nowrap;
+}
+
+
+.title-header {
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: monospace;  
+}
+
+
+
+.list-contacts {
+    display:inline-flex;
+    vertical-align: middle;
+}
+
+
+
+.icon-contact {
+    text-decoration: none;
+    color: black;
+    padding-right: 20px;
+}
+
+
+
+.menu-section {
+    padding-left: 80px;
+    display: none;
+}
+
+
+.menu-section#home {
+    display: block;
+}
+
+
+.title-section {
+    font-size: 16px;
+    padding-left: 20px;
+    padding-top: 30px;
+    font-family: monospace;  
+}
+
+
+/*******************/
+
+
+/*About Me Page*/
+
+.img-personal {
+    width: 150px;
+    border-radius: 50%;
+}
+
+
+.img-container {
+    width: 250px;
+    padding-left: 20px;
+    height: auto;
+}
+
+
+.header-about {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.description-personal {
+    letter-spacing: 3px;
+    line-height: 2.0;
+    width: 100%
+}
+
+
+
+/* Experience Tabs */
+
+div.tabs-xp {
+    min-height: 20em;
+    position: relative;
+    line-height: 1;
+    z-index: 0;
+    width: 98%;    
+}			
+
+
+div.tabs-xp > div {
+    display: inline;
+}  
+
+
+
+div.tabs-xp > div > a {
+    color: #555;
+    background: #CCC;
+    padding: 0.2em;
+    border: 0.1em outset #BBB;
+    border-bottom: 0.1em solid #CCC;
+}
+
+
+
+div.tabs-xp > div:not(:target) > a {
+    border-bottom: none;
+    background: #999;
+}
+
+
+div.tabs-xp > div:target > a:target #tab-xp-eng > a {
+    border-bottom: 0.1em solid #CCC;
+    background: #CCC;
+}
+
+
+
+div.tabs-xp > div > div {
+    background: #CCC;	
+    z-index: -2;		
+    left: 0; top: 1.3em;
+    bottom: 0; right: 0;
+    overflow: auto;	
+    padding: 0.3em;	
+    border: 0.1em outset #BBB;
+}
+
+
+div.tabs-xp > div > div > div, li {
+    background: #CCC;	
+    color:#555;
+    border: none;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    padding-bottom: 5px;        
+}
+
+
+div.tabs-xp > div:not(:target) > div {
+    position: absolute;
+}
+
+
+
+div.tabs-xp > div:target > div, :target #tab-xp-eng > div {
+    position: absolute;
+    z-index: -1;
+}
